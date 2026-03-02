@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Gallery.css">
+</head>
+<body>
+    <div id="notification" class="notification"></div>
+    <nav class="content">
+       <div class="food">
+          <img src="./img/504556bed43759e7d4388bcd0d229791-removebg-preview.png" alt="" width="110">
+          <h2>restaurant</h2>
+       </div>
+       <div class="list">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Event.html">Event</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="hide"><a href="index.html">Home</a></li>
+            <li class="hide"><a href="Menu.html">Menu</a></li>
+            <li class="hide"><a href="Event.html">Event</a></li>
+            <li class="hide"><a href="Gallery.html">Gallery</a></li>
+            <li class="hide"><a href="About.html">About</a></li>
+            <li class="hide"><a href="Contact.html">Contact</a></li>
+            <li onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+       </div>
+        <button onclick="dark()" id="modeBtn" style="padding: 5px 10px; height: 38px; margin-top: 1.8em; background: linear-gradient(rgba(255, 255, 255, 0.836), black); color: aliceblue; border: solid 0px; border-radius: 20px;">Dark Mode</button>
+       <div class="book" onclick="changebar()" id="looks">
+        <button>Book</button>
+       </div>
+    </nav>
+
+      <div class="gall">
+          <h1><u> GALLERY </u></h1>
+          <div class="yer">
+          <img src="./img/a0f7ff03c12b96c00ef06e9257e5bd92.jpg" alt="" width="300">
+          <img src="./img/9e59079322788dd2c65a0bd42997a3fa.jpg" alt="" width="300">
+          <img src="./img/2813abe824b919a84389be0e56caf84b.jpg" alt="" width="300">
+          <img src="./img/28e6541163111d383bbbc1c2636384df.jpg" alt="" width="300">
+          <img src="./img/f891ca3ef1b972ef5a1bc5c0da2b3e08.jpg" alt="" width="300">
+          <img src="./img/c5f9f2f6fda574c331ee63d6deb95e1f.jpg" alt="" width="300">
+          <img src="./img/8bf39880658a6e3f5f98633dd501003d.jpg" alt="" width="300">
+          <img src="./img/42fc9ba1c211d6f2133a9e399f2b90b8.jpg" alt="" width="300">
+          <img src="./img/fef623e7db560a3fc8676cd69ebd1572.jpg" alt="" width="300">
+          <img src="./img/96e5c0917ae051c1e799261757889b10.jpg" alt="" width="300">
+          <img src="./img/0dd36012441b5600a27a77dd04b9a121.jpg" alt="" width="300">
+          <img src="./img/b8a59ec3296bfb2c3a1d9b4684f1493b.jpg" alt="" width="300">
+          <img src="./img/c9b48e9163a33ddf4dd15cacff862ca8.jpg" alt="" width="300">
+          <img src="./img/b04e46c230d3c799b0b8dab9534f5781.jpg" alt="" width="300">
+          <img src="./img/733307eaf8abb2f988f603a02651871f.jpg" alt="" width="300">
+          <img src="./img/7873413319a4600bf7a75ef3d78b8a64.jpg" alt="" width="300">
+          <img src="./img/fa8e03bad48021d28a3181e5e2e4afb0.jpg" alt="" width="300">
+          <img src="./img/1e2ac1f56cfec868a91593c10aa075d6.jpg" alt="" width="300">
+          <img src="./img/84170ea1e18c80b5a84a84caddf0cdaf.jpg" alt="" width="300">
+          <img src="./img/6958efdedb10cb47841b7ccd95992085.jpg" alt="" width="300">
+          <img src="./img/ab68fea7c49cc9bf7fb330cda852f65e.jpg" alt="" width="300">
+          <img src="./img/0678b4fae3bf1ec390168b5e8cc18190.jpg" alt="" width="300">
+          <img src="./img/49585b5aadd4e846845d507da2e6c065.jpg" alt="" width="300">
+          <img src="./img/3fe6b67ab45fd7a5f88252a6ca345a12.jpg" alt="" width="300">
+          </div>
+      </div>
+
+    <script src="./Gallery.js"></script>
+</body>
+</html>

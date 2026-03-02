@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    background: #2ecc;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    display: none;
+    animation: slideIn 0.3s ease;
+    z-index: 1000;
+}
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+.content{
+    display: flex;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    padding: 1em;
+    box-shadow: 0 3px 5px;
+    width: 98.5%;
+    z-index: 100;
+    border-radius: 60px;
+    height: 120px;
+    text-align: center;
+    margin: 10px;
+    justify-content: space-between;
+}
+.food{
+    display: flex;
+}
+.food img{
+    height: 17vh;
+}
+.food h2{
+    padding-top: 32px;
+    position: relative;
+    right: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list ul{
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    padding-top: 35px;
+    text-align: center;
+    gap: 40px;
+}
+.list li a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.list li a:hover{
+    background-color: rgb(219, 72, 18);
+    padding: 11px;
+    color: aliceblue;
+    border-radius: 25px;
+}
+.book{
+    margin-top: 26px;
+}
+.book button{
+    padding: 8px;
+    width: 120px;
+    font-weight: bolder;
+    border: solid 2px rgb(172, 46, 1);
+    margin-right: 25px;
+    border-top-left-radius: 15px;
+    color: aliceblue;
+    background-color: orangered;
+    border-bottom-right-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.book button:hover{
+    background-color: rgb(172, 46, 1);
+    border: solid 2px orangered;
+    border: solid 2px black;
+}
+.sidebar{
+    position: fixed;
+    z-index: 100;
+    top: 130px;
+    border-radius: 20px;
+    right: 10px;
+    transition: all ease-in-out 2s;
+    width: 250px;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 5px 5px 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar li a{
+    color: rgb(2, 2, 2);
+}
+.sidebar{
+    width: 25%;
+    height: 370%;
+}
+@media(max-width: 830px){
+    .hide{
+        display: none;
+    }
+    .food img{
+        height: 17vh;
+        width: 100px;
+    }
+    .food h2{
+        font-size: 22px;
+    }
+    .book button{
+        width: 60px;
+        height: 30px;
+        margin-top: 0.4em;
+        margin-left: 0.6em;
+    }
+}
+.gall{
+    text-align: center;
+    padding-top: 6.5em;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.yer{
+    display: flex;
+    margin: 2em;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.yer img{
+    border-bottom-right-radius: 55px;
+    padding-bottom: 0.5em;
+    box-shadow: 0px 1px 4px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    background: #2ecc;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    display: none;
+    animation: slideIn 0.3s ease;
+    z-index: 1000;
+}
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+.content{
+    display: flex;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    padding: 1em;
+    box-shadow: 0 3px 5px;
+    width: 98.5%;
+    z-index: 100;
+    border-radius: 60px;
+    height: 120px;
+    text-align: center;
+    margin: 10px;
+    justify-content: space-between;
+}
+.food{
+    display: flex;
+}
+.food img{
+    height: 17vh;
+}
+.food h2{
+    padding-top: 32px;
+    position: relative;
+    right: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list ul{
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    padding-top: 35px;
+    text-align: center;
+    gap: 40px;
+}
+.list li a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.list li a:hover{
+    background-color: rgb(219, 72, 18);
+    padding: 11px;
+    color: aliceblue;
+    border-radius: 25px;
+}
+.book{
+    margin-top: 26px;
+}
+.book button{
+    padding: 8px;
+    width: 120px;
+    font-weight: bolder;
+    border: solid 2px rgb(172, 46, 1);
+    margin-right: 25px;
+    border-top-left-radius: 15px;
+    color: aliceblue;
+    background-color: orangered;
+    border-bottom-right-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.book button:hover{
+    background-color: rgb(172, 46, 1);
+    border: solid 2px orangered;
+    border: solid 2px black;
+}
+.sidebar{
+    position: fixed;
+    z-index: 100;
+    top: 130px;
+    border-radius: 20px;
+    right: 10px;
+    transition: all ease-in-out 2s;
+    width: 250px;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 5px 5px 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar li a{
+    color: rgb(2, 2, 2);
+}
+.sidebar{
+    width: 25%;
+    height: 360%;
+}
+@media(max-width: 830px){
+    .hide{
+        display: none;
+    }
+    .food img{
+        height: 17vh;
+        width: 100px;
+    }
+    .food h2{
+        font-size: 22px;
+    }
+    .book button{
+        width: 60px;
+        height: 30px;
+        margin-top: 0.4em;
+        margin-left: 0.6em;
+    }
+}
+.rest{
+    height: 100vh;
+    display: flex;
+    padding: 2rem;
+    padding-top: 9rem;
+}
+.best{
+    padding-top: 3.5rem;
+}
+.best h1{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.color{
+    color: orangered;
+}
+.best p{
+    padding-top: 3rem;
+    text-align: left;
+    text-align: justify;
+    line-height: 20px;
+    font-weight: bolder;
+    justify-content: center;
+}
+.click button{
+    padding: 8px;
+    margin-top: 2.0em;
+    margin-right: 1.5em;
+    border: solid 1px;
+}
+.men {
+    background-color: black;
+    color: aliceblue;
+    width: 12vh;
+    font-weight: bolder;
+    border: solid 3px white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all ease-in-out .2s;
+}
+.men:hover{
+    background-color: grey;
+    color: black;
+    font-weight: bolder;
+}
+.ok {
+    background-color: orangered;
+    color: aliceblue;
+    width: 17vh;
+    font-weight: bolder;
+    border: solid 3px white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all ease-in-out .2s;
+}
+.ok:hover{
+    background-color: orange;
+    color: black;
+    font-weight: bolder;
+}
+.icon{
+    margin-top: 2em;
+}
+.icon img{
+    margin-right: 1em;
+    align-items: center;
+}
+.rant{
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+}
+.rant img{
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: 1.5rem;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+@media(max-width: 830px){
+    .hide{
+        display: none;
+    }
+    .rest{
+        flex-direction: column;
+        height: 165vh;
+    }
+}
+.special{
+    height: 85vh;
+    padding-right: 2em;
+    padding-left: 2em;
+    text-align: center;
+}
+.special h1{
+    font-size: 50px;
+    padding-top: 1em;
+    font-weight: bolder;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+}
+.special p{
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.dish{
+    display: flex;
+    gap: 20px;
+    padding-top: 4.5rem;
+}
+.our h3{
+    font-size: 18px;
+    padding: 1em;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.our p{
+    font-size: 16px;
+    justify-content: center;
+}
+@media(max-width: 830px){
+    .dish{
+        flex-direction: column;
+    }
+    .special{
+        height: 160%;
+    }
+}
+.well{
+    display: flex;
+    height: 100vh;
+    padding: 160px;
+}
+.come{
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+}
+.comes h1{
+    font-size: 55px;
+    padding-bottom: 0.7em;
+}
+.lick button{
+    padding: 8px;
+    margin-top: 2.0em;
+    margin-right: 1.5em;
+    border: solid 1px;
+}
+.man {
+    background-color: black;
+    color: aliceblue;
+    width: 12vh;
+    font-weight: bolder;
+    border: solid 1px white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all ease-in-out .2s;
+}
+.man:hover{
+    background-color: grey;
+    color: black;
+    font-weight: bolder;
+}
+.okay {
+    background-color: orangered;
+    color: aliceblue;
+    width: 17vh;
+    font-weight: bolder;
+    border: solid 1px white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all ease-in-out .2s;
+}
+.okay:hover{
+    background-color: orange;
+    color: black;
+    font-weight: bolder;
+}
+@media(max-width: 830px){
+    .well{
+        flex-direction: column;
+        height: 190vh;
+    }
+    .come img{
+        position: relative;
+        right: 50px;
+    }
+    .comes{
+        text-align: left;
+        position: relative;
+        right: 90px;
+    }
+    .comes h1{
+        font-size: 40px;
+    }
+    .comes p{
+        width: 250px;
+    }
+}
+.chef{
+    display: flex;
+    gap: 50px;
+    padding: 2rem;
+    justify-content: space-between;
+}
+.ah{
+    color: orangered;
+}
+.expert h1{
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.stop li {
+    padding-bottom: 10px;
+    font-weight: bolder;
+    color: orangered;
+}
+.stop ul{
+    margin-left: 2em;
+    font-style: italic;
+    font-size: 28px;
+}
+.guy{
+    border-radius: 50%;
+    height: 100vh;
+    padding: 2em;
+    margin-top: 8em;
+    background: linear-gradient(orangered, orange);
+    z-index: -1;
+}
+.guy img{
+    transform: translateY(-30px);
+    filter: saturate(120%);
+    position: relative;
+    right: 2.5em;
+    bottom: 310px;
+}
+.ick button{
+    padding: 8px;
+    margin-left: 3em;
+    margin-top: 2.0em;
+    border: solid 1px;
+}
+.an {
+    background-color: black;
+    color: aliceblue;
+    width: 12vh;
+    font-weight: bolder;
+    border: solid 1px white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all ease-in-out .2s;
+}
+.an:hover{
+    background-color: grey;
+    color: black;
+    font-weight: bolder;
+}
+.kay {
+    background-color: orangered;
+    color: aliceblue;
+    width: 17vh;
+    font-weight: bolder;
+    border: solid 1px white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all ease-in-out .2s;
+}
+.kay:hover{
+    background-color: orange;
+    color: black;
+    font-weight: bolder;
+}
+@media(max-width: 830px){
+    .chef{
+        flex-direction: column;
+    }
+    .guy{
+        right: 0em;
+        bottom: 0px;
+        height: 0px;
+        background: #fff;
+
+    }
+    .guy img{
+        position: relative;
+        right: 70px;
+        width: 400px;
+    }
+    .ick button{
+        margin-bottom: 5em;
+    }
+}
+.happy{
+    text-align: center;
+    padding: 2em;
+}
+.happy h1{
+    font-size: 40px;
+    margin-top: 2em;
+    padding-bottom: 0.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.happy p{
+    font-weight: bolder;
+}
+.isaac{
+    display: flex;
+    gap: 20px;
+}
+.mers{
+    background-color: rgba(128, 128, 128, 0.534);
+    margin-top: 3em;
+    border-radius: 20px;
+    padding: 2em;
+}
+.mers p{
+    width: 55vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.mers h2{
+    margin-top: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media(max-width: 830px){
+    .happy{
+        margin-top: 9em;
+    }
+    .isaac{
+        flex-direction: column;
+    }
+    .mers p{
+        width: 45vh;
+    }
+}
+.promo{
+    height: 500px;
+    margin: 85px;
+    text-align: center;
+    border-radius: 30px;
+}
+.promo h1{
+    color: #fff;
+    font-size: 45;
+    padding-top: 180px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.promo h2{
+    font-size: 35px;
+    color: #fff;
+    padding-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.promo input{
+    padding: 1.0em;
+    width: 550px;
+    border-radius: 7px;
+    border: solid 2px orangered;
+}
+.promo input:hover{
+    border: solid 0px;
+    transform: scale(1.05);
+    background: linear-gradient(orangered, orange);
+}
+@media(max-width: 830px){
+    .promo input{
+        width: 190px;
+    }
+    .promo h1{
+        font-size: 15px;
+    }
+    .promo h2{
+        font-size: 15px;
+    }
+    .promo{
+        height: 500px;
+        text-align: center;
+        width: 300px;
+        margin-right: 0px;
+        margin-left: 75px;
+    }
+}
+.laster{
+    margin-left: 3.5rem;
+    margin-right: 6.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.oo{
+    display: flex;
+}
+.oo img{
+    position: relative;
+    bottom: 40px;
+    height: 20vh;
+    left: 25px;
+}
+.lory h3{
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pany h4{
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pany h3{
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.lory h4{
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.llow h3{
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media(max-width: 830px){
+    .laster{
+        flex-direction: column;
+    }
+    .pany{
+        margin-top: 2em;
+    }
+    .llow{
+        margin-top: 2em;
+    }
+}

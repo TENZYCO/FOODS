@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./About.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div id="notification" class="notification"></div>
+    <nav class="content">
+       <div class="food">
+          <img src="./img/504556bed43759e7d4388bcd0d229791-removebg-preview.png" alt="" width="110">
+          <h2>restaurant</h2>
+       </div>
+       <div class="list">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Event.html">Event</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="hide"><a href="index.html">Home</a></li>
+            <li class="hide"><a href="Menu.html">Menu</a></li>
+            <li class="hide"><a href="Event.html">Event</a></li>
+            <li class="hide"><a href="Gallery.html">Gallery</a></li>
+            <li class="hide"><a href="About.html">About</a></li>
+            <li class="hide"><a href="Contact.html">Contact</a></li>
+            <li onclick=showSidebar()><a href="#" class="mo"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+       </div>
+        <button onclick="dark()" id="modeBtn" style="padding: 5px 10px; height: 38px; margin-top: 1.8em; background: linear-gradient(rgba(255, 255, 255, 0.836), black); color: aliceblue; border: solid 0px; border-radius: 20px;">Dark Mode</button>
+       <div class="book" onclick="changebar()" id="looks">
+        <button>Book</button>
+       </div>
+    </nav>
+
+    <div class="im" style="background: linear-gradient(rgba(0, 0, 0, 0.63)), url(./img/dec561e1ad4450140a21c277b4332acf.jpg); background-size: cover;">
+       <img src="./img/be06de64182425d677002492fce5b36b-removebg-preview.png" alt="">
+    </div>
+
+    <script src="About.js"></script>
+</body>
+</html>

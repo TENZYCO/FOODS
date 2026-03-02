@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="notification" class="notification"></div>
+    <nav class="content">
+       <div class="food">
+          <img src="./img/504556bed43759e7d4388bcd0d229791-removebg-preview.png" alt="" width="110">
+          <h2>restaurant</h2>
+       </div>
+       <div class="list">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Event.html">Event</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="hide"><a href="index.html">Home</a></li>
+            <li class="hide"><a href="Menu.html">Menu</a></li>
+            <li class="hide"><a href="Event.html">Event</a></li>
+            <li class="hide"><a href="Gallery.html">Gallery</a></li>
+            <li class="hide"><a href="About.html">About</a></li>
+            <li class="hide"><a href="Contact.html">Contact</a></li>
+            <li onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+       </div>
+        <button onclick="dark()" id="modeBtn" style="padding: 5px 10px; height: 38px; margin-top: 1.8em; background: linear-gradient(rgba(255, 255, 255, 0.836), black); color: aliceblue; border: solid 0px; border-radius: 20px;">Dark Mode</button>
+       <div class="book" onclick="changebar()" id="looks">
+        <button>Book</button>
+       </div>
+    </nav>
+  
+    <div class="rest">
+        <div class="best">
+        <h1>We provide the</h1>
+        <h1 class="color">best food for you</h1>
+        <p>At [Your Brand Name], excellence is served in every bite. We provide the best food for you by combining quality ingredients, skilled culinary craftsmanship, and a dedication to flavor that exceeds expectations.</p>
+              <div class="click">
+                <button class="men" onclick="changeTitle()" id="books">Menu</button>
+                <button class="ok"  onclick="change()" id="oks">Book a table</button>
+              </div>
+              <div class="icon" id="con">
+                <img src="./img/918b20dc0aa716e09fd0a58f9dd8e720-removebg-preview.png" alt="" width="60" id="X" onclick="X()">
+                <img src="./img/4c5256619805526f82cbe5dd3a7f4f07-removebg-preview.png" alt="" width="40" id="F" onclick="F()">
+                <img src="./img/6e6d61407e6c42e4e237c1cee702692b-removebg-preview.png" alt="" width="40" id="I" onclick="I()">
+              </div>
+    </div>
+        <div class="rant">
+           <img src="./img/80b60013884e7997f1cb24f83a3f2e97.jpg" alt="" width="250"> 
+        </div>
+    </div>
+
+    <div class="special" >
+        <h1>Our Special Dishes</h1>
+        <p>Where Every Bite Tells a Delicious Story, An Experience on Every Plate, Eat Special. Feel Special</p>
+        <div class="dish">
+            <div class="our">
+            <img src="./img/2651a08c96981fc3d4c70ddead61c07a-removebg-preview.png" alt="" width="130">
+            <h3>GRILLED SALMON</h3>
+            <p>Chicken and Chips is the ultimate comfor meal, combing perfectly seasoned, crispy chicken with golden, freshly fried chips.
+            </p>
+            </div>
+            <div class="our">
+            <img src="./img/6c5c2cf3f8b95a77795af88dbfd68b66-removebg-preview.png" alt="" width="130">
+            <h3>CHICKEN & CHIPS</h3>
+            <p>Chicken and Chips is the ultimate comfor meal, combing perfectly seasoned, crispy chicken with golden, freshly fried chips.
+            </p>
+            </div>
+            <div class="our">
+            <img src="./img/e2f0eac2da08ec56ac272e28e29db4da-removebg-preview.png" alt="" width="100">
+            <h3>SEMO</h3>
+            <p>Chicken and Chips is the ultimate comfor meal, combing perfectly seasoned, crispy chicken with golden, freshly fried chips.
+            </p>
+            </div>
+            <div class="our">
+            <img src="./img/864b0604143984a618710b9baeaaa15a-removebg-preview.png" alt="" width="130">
+            <h3>GREEN SALAD</h3>
+            <p>Chicken and Chips is the ultimate comfor meal, combing perfectly seasoned, crispy chicken with golden, freshly fried chips.
+            </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="well" >
+       <div class="come">
+          <img src="./img/e26df91e648cb164b612ff652669e082__1_-removebg-preview.png" alt="" width="350">
+       </div>
+       <div class="comes">
+        <h1>Welcome to our Restaurant</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perferendis ipsam qui eos sequi distinctio, natus dolorem maxime possimus aperiam laborum at reprehenderit quae deserunt. Fuga eligendi iste saepe facilis!</p>
+        <div class="lick">
+                <button class="man" onclick="changeTitle()" id="books">Menu</button>
+                <button class="okay"  onclick="change()" id="oks">Book a table</button>
+              </div>
+       </div>
+    </div>
+
+    <div class="chef">
+        <div class="expert">
+          <h1>Our Expert <span class="ah">Chefs</span></h1>
+          <div class="stop">
+            <ul>
+                <li>Highly trained culinary professionals</li>
+                <li>Years of hands-on kitchen experience</li>
+                <li>Dedicated to food presentation</li>
+                <li>Expert in modern cooking techniques</li>
+                <li>Committed to fresh ingredients</li>
+                <li>Creative recipe innovators</li>
+                <li>Skilled in local and international dishes</li>
+                <li>Consistent in quality delivery</li>
+                <li>Fast and efficient Service</li>
+                <li>Passionate about expectional taste</li>
+                <li>Precision in Preparation</li>
+                <li>Excellence driven professionals</li>
+            </ul>
+            <div class="ick">
+                <button class="man" onclick="changeTitle()" id="books">Menu</button>
+                <button class="okay"  onclick="change()" id="oks">Book a table</button>
+              </div>
+          </div>
+        </div>
+        <div class="guy">
+            <img src="./img/5e816a835df8f66fdbe3c97b34a4a33e-removebg-preview.png" alt="" width="600">
+        </div>
+    </div>
+
+    <div class="happy">
+        <h1>Our Happy Customers</h1>
+        <p>Smiles served with every meal, Where satisfaction meets great taste, Loved by every customer we serve.</p>
+        <div class="isaac">
+        <div class="mers">
+          <p>
+           "I honestly can’t say enough wonderful things about my experience with [Restaurant Name]! From the moment I placed my order, every detail was handled with care and attention. The ordering process was seamless, and I loved how easy it was to customize my meal exactly the way I wanted it.
+When the delivery arrived, the food was hot, fresh, and perfectly packaged—clearly prepared with skill and thoughtfulness. Each bite was a delight: the flavors were vibrant, the ingredients incredibly fresh, and the portions generous. I particularly adored the [signature dish], which exceeded all my expectations with its rich, authentic taste.
+          </p>
+          <h2>Fadahunsi isaac</h2>
+        </div>
+        <div class="mers">
+          <p>
+            "I honestly can’t say enough wonderful things about my experience with [Restaurant Name]! From the moment I placed my order, every detail was handled with care and attention. The ordering process was seamless, and I loved how easy it was to customize my meal exactly the way I wanted it.
+When the delivery arrived, the food was hot, fresh, and perfectly packaged—clearly prepared with skill and thoughtfulness. Each bite was a delight: the flavors were vibrant, the ingredients incredibly fresh, and the portions generous. I particularly adored the [signature dish], which exceeded all my expectations with its rich, authentic taste.
+          </p>
+          <h2>Fadahunsi isaac</h2>
+        </div>
+        <div class="mers">
+          <p>
+            "I honestly can’t say enough wonderful things about my experience with [Restaurant Name]! From the moment I placed my order, every detail was handled with care and attention. The ordering process was seamless, and I loved how easy it was to customize my meal exactly the way I wanted it.
+When the delivery arrived, the food was hot, fresh, and perfectly packaged—clearly prepared with skill and thoughtfulness. Each bite was a delight: the flavors were vibrant, the ingredients incredibly fresh, and the portions generous. I particularly adored the [signature dish], which exceeded all my expectations with its rich, authentic taste.
+          </p>
+          <h2>Fadahunsi isaac</h2>
+        </div>
+        </div>
+    </div>
+
+    <div class="promo" style="background: linear-gradient(rgba(0, 0, 0, 0.445)), url(./img/78bcf121d2f7734e12d77a13360b1e1a.jpg); background-size: cover;">
+        <h1>Get Or Promo Code by</h1>
+        <h2>Subscribing To our Newsletter</h2>
+        <form action="" id="form">
+        <label for="" id="mine">
+            <input type="FOOD" id="email" placeholder="FOOD" required>
+        </label>
+        </form>
+    </div>
+
+    <div class="laster">
+        <div class="oo">
+       <img src="./img/504556bed43759e7d4388bcd0d229791-removebg-preview.png" alt="" width="120">
+          <h2>restaurant</h2>
+        </div>
+        <div class="lory">
+            <h3>CATEGORY</h3>
+            <h4>New in</h4>
+            <h4>Choice</h4>
+            <h4>Weekly pick</h4>
+        </div>
+        <div class="pany">
+            <h3>COMPANY INFO</h3>
+            <h4>About Us</h4>
+            <h4>About Us</h4>
+            <h4>About Us</h4>
+            <h4>About Us</h4>
+            <h4>About Us</h4>
+            <h4>About Us</h4>
+        </div>
+        <div class="llow">
+            <h3>FOLLOW US</h3>
+            <img src="./img/4c5256619805526f82cbe5dd3a7f4f07-removebg-preview.png" alt="" width="40">
+            <img src="./img/6e6d61407e6c42e4e237c1cee702692b-removebg-preview.png" alt="" width="40">
+            <img src="./img/918b20dc0aa716e09fd0a58f9dd8e720-removebg-preview.png" alt="" width="60">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

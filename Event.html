@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Event.css">
+</head>
+<body>
+    <div id="notification" class="notification"></div>
+    <nav class="content">
+       <div class="food">
+          <img src="./img/504556bed43759e7d4388bcd0d229791-removebg-preview.png" alt="" width="110">
+          <h2>restaurant</h2>
+       </div>
+       <div class="list">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Event.html">Event</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="hide"><a href="index.html">Home</a></li>
+            <li class="hide"><a href="Menu.html">Menu</a></li>
+            <li class="hide"><a href="Event.html">Event</a></li>
+            <li class="hide"><a href="Gallery.html">Gallery</a></li>
+            <li class="hide"><a href="About.html">About</a></li>
+            <li class="hide"><a href="Contact.html">Contact</a></li>
+            <li onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+       </div>
+        <button onclick="dark()" id="modeBtn" style="padding: 5px 10px; height: 38px; margin-top: 1.8em; background: linear-gradient(rgba(255, 255, 255, 0.836), black); color: aliceblue; border: solid 0px; border-radius: 20px;">Dark Mode</button>
+       <div class="book" onclick="changebar()" id="looks">
+        <button>Book</button>
+       </div>
+    </nav>
+
+     <div class="chipps" style="background-image: linear-gradient(rgba(0, 0, 0, 0.233)), url(./img/4cfccdae5f12b69084efa4d4a9c16e6a.jpg); background-size: cover;">
+        
+     </div>
+     <div class="vent">
+        <img src="./img/504556bed43759e7d4388bcd0d229791-removebg-preview.png" alt="" width="150">
+        <h2>Event</h2>
+     </div>
+     <div class="put">
+     <div class="wed">
+      <h1>WEDDING</h1>
+      <div class="ding">
+        <img src="./img/1e63411d4fbae30c8dfb3b65606afa9f.jpg" alt="" width="295">
+        <img src="./img/4b77daa2631a7f1d76385093e079a64a.jpg" alt="" width="295">
+        <img src="./img/9530f3d6001c920e62b87b6a9f083aa2.jpg" alt="" width="295">
+        <img src="./img/636fc8208474a79d3ce9be445d3733ad.jpg" alt="" width="295">
+        <img src="./img/665c2f1ee30d3a491077773ed98aeb3c.jpg" alt="" width="295">
+        <img src="./img/16681e18e021f3111d78068bba4f35c1.jpg" alt="" width="295">
+        <img src="./img/f3eba0263b4d8238676abe709e2ddfd7.jpg" alt="" width="295">
+        <img src="./img/a7c608625c095cc8ffbf28d373f05958.jpg" alt="" width="295">
+      </div>
+     </div>
+
+     <div class="wedd">
+      <h1>PARTIES</h1>
+      <div class="dding">
+        <img src="./img/f66eef74cad510e4a5c3189987d632ac.jpg" alt="" width="295">
+        <img src="./img/03ab03d3d4ddc645134259c0e31dbe11.jpg" alt="" width="295">
+        <img src="./img/416a37bec3f3a6feb867ecffb9fde463.jpg" alt="" width="295">
+        <img src="./img/a42aa0d496a7f44afd144f8d4d70f070.jpg" alt="" width="295">
+        <img src="./img/c29d44ebba7e99945712d5afbc521868.jpg" alt="" width="295">
+        <img src="./img/606fd57f29aef577600b98183d5fd3fe.jpg" alt="" width="295">
+        <img src="./img/8b5dc67e2b485d394b3e463709574805.jpg" alt="" width="295">
+        <img src="./img/a44eef0cf384b6bca35766502791938b.jpg" alt="" width="295">
+      </div>
+     </div>
+
+     <div class="bedd">
+      <h1>CEREMONIES</h1>
+      <div class="bbing">
+        <img src="./img/9ad984468da2303a6fc5a0e3d233a7ab.jpg" alt="" width="295">
+        <img src="./img/2157321a1af69dbba2e37a90d1a48531.jpg" alt="" width="295">
+        <img src="./img/94ebaa4c701e0414883d6c9dedad17c7.jpg" alt="" width="295">
+        <img src="./img/4488eab6025721be8083f6fd8c8defda.jpg" alt="" width="295">
+        <img src="./img/c45a4a83cc20fa6dc44da2bb0dc554f5.jpg" alt="" width="295">
+        <img src="./img/61781dc543a51e2d0bb1adb81ef1ad9b.jpg" alt="" width="295">
+        <img src="./img/e960b15443a396cd4a8b76ecdb9233a4.jpg" alt="" width="295">
+        <img src="./img/23b45e53a4eb47a831560a3505235da2.jpg" alt="" width="295">
+      </div>
+     </div>
+
+     <div class="bed">
+      <h1>HOLIDAY CELEBRATION</h1>
+      <div class="bbin">
+        <img src="./img/b109a187298519ec8f721112d6ee9edb.jpg" alt="" width="295">
+        <img src="./img/aca8cb487e2d201fb5fcefc7681dd3ec.jpg" alt="" width="295">
+        <img src="./img/77b90ad59a483ba797ddfdd93f60f642.jpg" alt="" width="295">
+        <img src="./img/1eaa7bc0c0804d3e377fcb70045bbacc.jpg" alt="" width="295">
+        <img src="./img/73cbdc977bd09437ba859017cc37e954.jpg" alt="" width="295">
+        <img src="./img/b7b173e2597a6e854f93bf4eab12812a.jpg" alt="" width="295">
+        <img src="./img/5a7e821aad909e1c66ad90b9603fa63f.jpg" alt="" width="295">
+        <img src="./img/a1e02c36895a3f0c3e583161e6f730e7.jpg" alt="" width="295">
+      </div>
+     </div>
+
+     <div class="reg">
+      <h1>RELIGIOUS CELEBRATION</h1>
+      <div class="bbeg">
+        <img src="./img/a7777f4c8e96151b436aa608ccfec46b.jpg" alt="" width="295">
+        <img src="./img/ffd2d15420febf0faa7f033e8e942cac.jpg" alt="" width="295">
+        <img src="./img/89393a0553b5798abb30dd20ac0faa43.jpg" alt="" width="295">
+        <img src="./img/0a2f2ae156e848cbac97364376247748.jpg" alt="" width="295">
+        <img src="./img/a91a0182c3a011e58c5dab4bdd0e6dc5.jpg" alt="" width="295">
+        <img src="./img/80fe53efffeeae30c71160f86bccc035.jpg" alt="" width="295">
+        <img src="./img/c28aa9eb1228f1211315f06743d865fe.jpg" alt="" width="295">
+        <img src="./img/91487d5df28778486b5c4a35a4a47bc0.jpg" alt="" width="295">
+      </div>
+     </div>
+     </div>
+
+     <footer>fadahunsiisaac781@gmail.com</footer>
+
+    <script src="Event.js"></script>
+</body>
+</html>

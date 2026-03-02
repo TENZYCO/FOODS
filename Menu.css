@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    background: #2ecc;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    display: none;
+    animation: slideIn 0.3s ease;
+    z-index: 1000;
+}
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+.content{
+    display: flex;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    padding: 1em;
+    box-shadow: 0 3px 5px;
+    width: 98.5%;
+    z-index: 100;
+    border-radius: 60px;
+    height: 120px;
+    text-align: center;
+    margin: 10px;
+    justify-content: space-between;
+}
+.food{
+    display: flex;
+}
+.food img{
+    height: 17vh;
+}
+.food h2{
+    padding-top: 32px;
+    position: relative;
+    right: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list ul{
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    padding-top: 35px;
+    text-align: center;
+    gap: 40px;
+}
+.list li a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.list li a:hover{
+    background-color: rgb(219, 72, 18);
+    padding: 11px;
+    color: aliceblue;
+    border-radius: 25px;
+}
+.book{
+    margin-top: 26px;
+}
+.book button{
+    padding: 8px;
+    width: 120px;
+    font-weight: bolder;
+    border: solid 2px rgb(172, 46, 1);
+    margin-right: 25px;
+    border-top-left-radius: 15px;
+    color: aliceblue;
+    background-color: orangered;
+    border-bottom-right-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.book button:hover{
+    background-color: rgb(172, 46, 1);
+    border: solid 2px orangered;
+    border: solid 2px black;
+}
+.sidebar{
+    position: fixed;
+    z-index: 100;
+    top: 130px;
+    border-radius: 20px;
+    right: 10px;
+    transition: all ease-in-out 2s;
+    width: 250px;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 5px 5px 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar li a{
+    color: rgb(2, 2, 2);
+}
+.sidebar{
+    width: 25%;
+    height: 365%;
+}
+@media(max-width: 830px){
+    .hide{
+        display: none;
+    }
+    .food img{
+        height: 17vh;
+        width: 100px;
+    }
+    .food h2{
+        font-size: 22px;
+    }
+    .book button{
+        width: 60px;
+        height: 30px;
+        margin-top: 0.4em;
+        margin-left: 0.6em;
+    }
+}
+.start{
+    height: 100vh;
+}
+.start h1{
+    padding-top: 240px;
+    font-size: 65px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 255px;
+    text-align: right;
+}
+.start h2{
+    padding-right: 120px;
+    color: #fff;
+    font-size: 65px;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.start h2 span{
+    color: orangered;
+}
+@media(max-width: 830px){
+    .start h1{
+        font-size: 45px;
+        padding-left: 35px;
+    }
+    .start h2{
+        font-size: 45px;
+    }
+}
+.hold{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
+.stay img{
+    height: 45vh;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 10px;
+    width: 650px;
+}
+.col img{
+    height: 45vh;
+    width: 650px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 10px;
+}
+@media(max-width: 830px){
+    .hold{
+        flex-direction: column;
+    }
+    .stay img{
+        width: 50vh;
+    }
+    .col img{
+        width: 50vh;
+    }
+}
+.rate{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.rate h1{
+    font-size: 45px;
+    font-weight: bolder;
+    padding-bottom: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mage{
+    flex-direction: column;
+}
+.mage img{
+    border: 0px solid;
+    width: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: linear-gradient(orange,orangered);
+}
+.mage button{
+    height: 18vh;
+    width: 250px;
+    padding: 10px;
+    position: relative;
+    bottom: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: solid 0px;
+    transition: all ease-in-out .5s;
+}
+.mage button:hover{
+    background: orangered;
+    color: #fff;
+}
+.mage button h1{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mage button span{
+    font-size: 25px;
+    padding-left: 170px;
+    font-weight: bolder;
+}
+.cont{
+    display: flex;
+    gap: 10px;
+}
+.quee{
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+.quee img{
+    border: 0px solid;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(orangered, orange);
+    margin-right: 1em;
+    height: 37vh;
+}
+@media(max-width: 830px){
+    .cont{
+        flex-direction: column;
+        text-align: center;
+    }
+    .quee img{
+        height: 27vh;
+    }
+}
+.laster{
+    padding-left: 3.5rem;
+    padding-right: 6.5rem;
+    padding-top: 1em;
+    color: #fff;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.oo{
+    display: flex;
+}
+.oo img{
+    position: relative;
+    bottom: 40px;
+    height: 20vh;
+    left: 25px;
+}
+.lory h3{
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pany h4{
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pany h3{
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.lory h4{
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.llow h3{
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media(max-width: 830px){
+    .laster{
+        flex-direction: column;
+    }
+    .pany{
+        margin-top: 2em;
+    }
+    .llow{
+        margin-top: 2em;
+    }
+}

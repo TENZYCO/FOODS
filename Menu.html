@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Menu.css">
+</head>
+<body>
+    <div id="notification" class="notification"></div>
+    <nav class="content">
+       <div class="food">
+          <img src="./img/504556bed43759e7d4388bcd0d229791-removebg-preview.png" alt="" width="110">
+          <h2>restaurant</h2>
+       </div>
+       <div class="list">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Event.html">Event</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="hide"><a href="index.html">Home</a></li>
+            <li class="hide"><a href="Menu.html">Menu</a></li>
+            <li class="hide"><a href="Event.html">Event</a></li>
+            <li class="hide"><a href="Gallery.html">Gallery</a></li>
+            <li class="hide"><a href="About.html">About</a></li>
+            <li class="hide"><a href="Contact.html">Contact</a></li>
+            <li onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+       </div>
+        <button onclick="dark()" id="modeBtn" style="padding: 5px 10px; height: 38px; margin-top: 1.8em; background: linear-gradient(rgba(255, 255, 255, 0.836), black); color: aliceblue; border: solid 0px; border-radius: 20px;">Dark Mode</button>
+       <div class="book" onclick="changebar()" id="looks">
+        <button>Book</button>
+       </div>
+    </nav> 
+
+    <div class="start" style="background: linear-gradient(rgba(0, 0, 0, 0.164)), url(./img/271961e178db1f2696ced7d0af38b4e3.jpg); background-size: cover;">
+      <h1>Enjoy Your </h1>
+      <h2> <span>Delicious</span> Food</h2>
+    </div>
+
+    <div class="hold">
+       <div class="stay">
+        <img src="./img/8a9cd03d2c3f56aa9bebe7c419869543.jpg" alt="" width="150">
+       </div>
+       <div class="col">
+        <img src="./img/6be013473928541325213f6afee090b2.jpg" alt="" width="150">
+       </div>
+    </div>
+
+    <div class="rate">
+       <h1>Our Meun</h1>
+       <div class="cont">
+       <div class="mage">
+        <img src="./img/image/39cfdb857c35119601cd9041efcca3e8-removebg-preview.png" alt="" width="190">
+        <button id="lok" onclick="ch()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/4d29c59152861ff99765a6461a24d527-removebg-preview.png" alt="" width="190">
+        <button id="ogo" onclick="che()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/59d2b1f1fc8ef7fdc91b179441c9c793-removebg-preview.png" alt="" width="190">
+        <button id="ola" onclick="chec()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/7d61e6ed6963f34e9d22a30063777511-removebg-preview.png" alt="" width="190">
+        <button id="opa" onclick="check()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       </div>
+    </div>
+
+    <div class="quee">
+        <marquee behavior="left" direction="">
+            <img src="./img/image/39cfdb857c35119601cd9041efcca3e8-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/4d29c59152861ff99765a6461a24d527-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/59d2b1f1fc8ef7fdc91b179441c9c793-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/7d61e6ed6963f34e9d22a30063777511-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/866264667b53884918ef0fe661f7c151-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/92784f0159fc5d61f4f0fbeaca4eddc5-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/adbba13b430013cbf2d66d3cea98fd94-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/b59fbedfc1e9fe4f4565f4dfd4aeb017-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/c2b9a95f223fedf868415e56d69f7f09-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/c491ef3c53215877fbe844c307993f3f-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d1387e6d1781325ec2b55968b9061396-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d32b989d4c0db2018b948b1cafc231a9-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d52587ea9ac936095c46ee1134410c4e-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/df14b73ebd8f2c66f9a7a5509c1ca89c-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/fe65fd37f7e8627b8d1f7951e7f3c8d1-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/ff0c8c3f0ec0108ecd6fe8f4ea62cf19-removebg-preview.png" alt="" width="200">
+        </marquee>
+    </div>
+
+    <div class="rate">
+    <div class="cont">
+       <div class="mage">
+        <img src="./img/image/866264667b53884918ef0fe661f7c151-removebg-preview.png" alt="" width="190">
+        <button id="aba" onclick="peck()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/92784f0159fc5d61f4f0fbeaca4eddc5-removebg-preview.png" alt="" width="190">
+        <button id="aga" onclick="pec()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/adbba13b430013cbf2d66d3cea98fd94-removebg-preview.png" alt="" width="190">
+        <button id="ala" onclick="pe()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/b59fbedfc1e9fe4f4565f4dfd4aeb017-removebg-preview.png" alt="" width="190">
+        <button id="apa" onclick="p()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       </div>
+    </div>
+
+    <div class="quee">
+        <marquee behavior="left" direction="">
+            <img src="./img/image/39cfdb857c35119601cd9041efcca3e8-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/4d29c59152861ff99765a6461a24d527-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/59d2b1f1fc8ef7fdc91b179441c9c793-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/7d61e6ed6963f34e9d22a30063777511-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/866264667b53884918ef0fe661f7c151-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/92784f0159fc5d61f4f0fbeaca4eddc5-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/adbba13b430013cbf2d66d3cea98fd94-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/b59fbedfc1e9fe4f4565f4dfd4aeb017-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/c2b9a95f223fedf868415e56d69f7f09-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/c491ef3c53215877fbe844c307993f3f-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d1387e6d1781325ec2b55968b9061396-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d32b989d4c0db2018b948b1cafc231a9-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d52587ea9ac936095c46ee1134410c4e-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/df14b73ebd8f2c66f9a7a5509c1ca89c-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/fe65fd37f7e8627b8d1f7951e7f3c8d1-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/ff0c8c3f0ec0108ecd6fe8f4ea62cf19-removebg-preview.png" alt="" width="200">
+        </marquee>
+    </div>
+
+    <div class="rate">
+    <div class="cont">
+       <div class="mage">
+        <img src="./img/image/b59fbedfc1e9fe4f4565f4dfd4aeb017-removebg-preview.png" alt="" width="190">
+        <button id="ooo" onclick="beck()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/c491ef3c53215877fbe844c307993f3f-removebg-preview.png" alt="" width="190">
+        <button id="ggg" onclick="bec()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/d1387e6d1781325ec2b55968b9061396-removebg-preview.png" alt="" width="190">
+        <button id="aaa" onclick="be()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/d32b989d4c0db2018b948b1cafc231a9-removebg-preview.png" alt="" width="190">
+        <button id="lll" onclick="b()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       </div>
+    </div>
+
+    <div class="quee">
+        <marquee behavior="left" direction="">
+            <img src="./img/image/39cfdb857c35119601cd9041efcca3e8-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/4d29c59152861ff99765a6461a24d527-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/59d2b1f1fc8ef7fdc91b179441c9c793-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/7d61e6ed6963f34e9d22a30063777511-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/866264667b53884918ef0fe661f7c151-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/92784f0159fc5d61f4f0fbeaca4eddc5-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/adbba13b430013cbf2d66d3cea98fd94-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/b59fbedfc1e9fe4f4565f4dfd4aeb017-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/c2b9a95f223fedf868415e56d69f7f09-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/c491ef3c53215877fbe844c307993f3f-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d1387e6d1781325ec2b55968b9061396-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d32b989d4c0db2018b948b1cafc231a9-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d52587ea9ac936095c46ee1134410c4e-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/df14b73ebd8f2c66f9a7a5509c1ca89c-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/fe65fd37f7e8627b8d1f7951e7f3c8d1-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/ff0c8c3f0ec0108ecd6fe8f4ea62cf19-removebg-preview.png" alt="" width="200">
+        </marquee>
+    </div>
+
+    <div class="rate">
+    <div class="cont">
+       <div class="mage">
+        <img src="./img/image/d52587ea9ac936095c46ee1134410c4e-removebg-preview.png" alt="" width="80">
+        <button id="boo" onclick="hair()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/df14b73ebd8f2c66f9a7a5509c1ca89c-removebg-preview.png" alt="" width="190">
+        <button id="goo" onclick="hai()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/fe65fd37f7e8627b8d1f7951e7f3c8d1-removebg-preview.png" alt="" width="190">
+        <button id="laa" onclick="ha()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       <div class="mage">
+        <img src="./img/image/ff0c8c3f0ec0108ecd6fe8f4ea62cf19-removebg-preview.png" alt="" width="190">
+        <button id="paa" onclick="h()"><h1>Spicy</h1> <span>$20</span></button>
+       </div>
+       </div>
+    </div>
+
+    <div class="quee">
+        <marquee behavior="left" direction="">
+            <img src="./img/image/39cfdb857c35119601cd9041efcca3e8-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/4d29c59152861ff99765a6461a24d527-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/59d2b1f1fc8ef7fdc91b179441c9c793-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/7d61e6ed6963f34e9d22a30063777511-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/866264667b53884918ef0fe661f7c151-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/92784f0159fc5d61f4f0fbeaca4eddc5-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/adbba13b430013cbf2d66d3cea98fd94-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/b59fbedfc1e9fe4f4565f4dfd4aeb017-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/c2b9a95f223fedf868415e56d69f7f09-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/c491ef3c53215877fbe844c307993f3f-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d1387e6d1781325ec2b55968b9061396-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d32b989d4c0db2018b948b1cafc231a9-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/d52587ea9ac936095c46ee1134410c4e-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/df14b73ebd8f2c66f9a7a5509c1ca89c-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/fe65fd37f7e8627b8d1f7951e7f3c8d1-removebg-preview.png" alt="" width="200">
+            <img src="./img/image/ff0c8c3f0ec0108ecd6fe8f4ea62cf19-removebg-preview.png" alt="" width="200">
+        </marquee>
+    </div>
+
+    
+    <div class="laster">
+        <div class="oo">
+       <img src="./img/504556bed43759e7d4388bcd0d229791-removebg-preview.png" alt="" width="120">
+          <h2>restaurant</h2>
+        </div>
+        <div class="lory">
+            <h3>CATEGORY</h3>
+            <h4>New in</h4>
+            <h4>Choice</h4>
+            <h4>Weekly pick</h4>
+        </div>
+        <div class="pany">
+            <h3>COMPANY INFO</h3>
+            <h4>About Us</h4>
+            <h4>About Us</h4>
+            <h4>About Us</h4>
+            <h4>About Us</h4>
+            <h4>About Us</h4>
+            <h4>About Us</h4>
+        </div>
+        <div class="llow">
+            <h3>FOLLOW US</h3>
+            <img src="./img/4c5256619805526f82cbe5dd3a7f4f07-removebg-preview.png" alt="" width="40">
+            <img src="./img/6e6d61407e6c42e4e237c1cee702692b-removebg-preview.png" alt="" width="40">
+            <img src="./img/918b20dc0aa716e09fd0a58f9dd8e720-removebg-preview.png" alt="" width="60">
+        </div>
+    </div>
+
+<script src="./Menu.js"></script>
+</body>
+</html>
